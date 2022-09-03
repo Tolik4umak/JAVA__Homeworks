@@ -42,9 +42,15 @@ public class Main {
 
 
         //Вводные
-        long num1 = 100_000_000_000L;
+        long num1 = 10;
 
         // Решение
+
+        if(num1<0){
+            num1*=-1;
+        }
+
+
         long step = 1;
         int digit = 0;
 
