@@ -34,7 +34,6 @@ public class Main {
 
         while (i<n){
             System.out.println((++i)+" * "+n+" = "+n*i);
-//            total=1;
         }
 
 
