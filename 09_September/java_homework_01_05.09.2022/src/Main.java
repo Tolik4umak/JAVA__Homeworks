@@ -15,13 +15,15 @@ public class Main {
  */
 
 
-        String frase = "Java is a very popular language";
+        String frase = "  Java is a very popular     language   ";
 
 
         String newFrase = "";
         int i = 0;
         int lastSpace = 0;
 
+
+        frase= frase.trim();
 
 //                       Находим индекс последнего пробела
         while(i<frase.length()){
