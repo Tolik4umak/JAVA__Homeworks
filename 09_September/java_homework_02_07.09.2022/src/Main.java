@@ -34,8 +34,8 @@ public class Main {
                 “Java is a very popular language”,  startIndex=5  endIndex=136  -> “is a very popular language”
 */
         String str = "Java is a very popular language";
-        int startIndex = 15;
-        int endIndex = 23;
+        int startIndex = 31;
+        int endIndex = 31;
 
         String newStr = "";
 
