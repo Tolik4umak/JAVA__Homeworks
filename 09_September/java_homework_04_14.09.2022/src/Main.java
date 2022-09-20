@@ -13,29 +13,29 @@ public class Main {
                 String, кроме length(), charAt() и equals()
         */
 
-       System.out.println(replace("Hello world!", "world", "all"));
-       System.out.println(replace("Hello world!", "l", "L"));
-       System.out.println(replace("Hello world!", "qwe", "L"));
-       System.out.println(replace("Hello world!", "ll", ""));
+        System.out.println(replace("Hello world!", "world", "all"));
+        System.out.println(replace("Hello world!", "l", "L"));
+        System.out.println(replace("Hello world!", "qwe", "L"));
+        System.out.println(replace("Hello world!", "ll", ""));
 
 
     }
 
 
-    public static String replace(String str, String oldStr, String newStr){
+    public static String replace(String str, String oldStr, String newStr) {
         String changeStr = "";
 
-        for (int i = 0 ; i<str.length(); i++){
+        for (int i = 0; i < str.length(); i++) {
 
-            String subStr ="";
-            for (int k = i; k<oldStr.length()+i&&k<str.length(); k++){
+            String subStr = "";
+            for (int k = i; k < oldStr.length() + i && k < str.length(); k++) {
                 subStr += str.charAt(k);
             }
 
-            if(subStr.equals(oldStr)){
+            if (subStr.equals(oldStr)) {
                 changeStr += newStr;
-                i = i+oldStr.length()-1;
-            }else {
+                i = i + oldStr.length() - 1;
+            } else {
                 changeStr += str.charAt(i);
             }
 
