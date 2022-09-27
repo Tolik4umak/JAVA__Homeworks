@@ -40,8 +40,6 @@ public class Main {
             }
 
         }
-
-        int difference = max(arr);
         return max(arr)- min;
     }
 
